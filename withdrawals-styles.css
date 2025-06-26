@@ -1,0 +1,320 @@
+/* Additional styles for withdrawals page */
+
+/* Speed Stat Cards */
+.speed-stat-card {
+  background: #232323;
+  border: 3px solid #0066ff;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.speed-stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 102, 255, 0.3);
+}
+
+.speed-stat-card.crypto {
+  border-color: #ffd700;
+}
+
+.speed-stat-card.crypto:hover {
+  box-shadow: 0 20px 40px rgba(255, 215, 0, 0.4);
+}
+
+.speed-stat-card.ewallet {
+  border-color: #aabbcc;
+}
+
+.speed-stat-card.ewallet:hover {
+  box-shadow: 0 20px 40px rgba(170, 187, 204, 0.3);
+}
+
+.speed-stat-card.bank {
+  border-color: #666;
+}
+
+.speed-stat-card.bank:hover {
+  box-shadow: 0 20px 40px rgba(102, 102, 102, 0.3);
+}
+
+.speed-icon {
+  width: 80px;
+  height: 80px;
+  border: 3px solid;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  font-size: 2rem;
+  transition: all 0.3s ease;
+}
+
+.speed-stat-card.crypto .speed-icon {
+  background: #ffd700;
+  border-color: #ffd700;
+  color: #1e1e1e;
+}
+
+.speed-stat-card.ewallet .speed-icon {
+  background: #aabbcc;
+  border-color: #aabbcc;
+  color: #1e1e1e;
+}
+
+.speed-stat-card.bank .speed-icon {
+  background: #666;
+  border-color: #666;
+  color: #fff;
+}
+
+.speed-stat-card:hover .speed-icon {
+  transform: rotate(360deg) scale(1.1);
+}
+
+.speed-time {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 0.5rem;
+}
+
+/* Withdrawal Article */
+.withdrawal-article {
+  background: #232323;
+  border: 2px solid #0066ff;
+  padding: 3rem;
+  position: relative;
+}
+
+.withdrawal-article::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0066ff, #ffd700, #0066ff);
+  animation: borderFlow 3s ease-in-out infinite;
+}
+
+@keyframes borderFlow {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.highlight-box {
+  background: #1e1e1e;
+  border: 3px solid #ffd700;
+  padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.highlight-box::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(45deg, #ffd700, #0066ff, #ffd700);
+  z-index: -1;
+  animation: highlightGlow 4s ease-in-out infinite;
+}
+
+@keyframes highlightGlow {
+  0%,
+  100% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+/* Withdrawal Methods Grid */
+.withdrawal-methods-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.method-category {
+  background: #232323;
+  border: 2px solid #0066ff;
+  overflow: hidden;
+}
+
+.method-title {
+  background: #0066ff;
+  color: #fff;
+  padding: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.method-table {
+  background: #1e1e1e;
+}
+
+.method-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.method-table th {
+  background: #232323;
+  color: #fff;
+  padding: 1rem;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 2px solid #0066ff;
+}
+
+.method-table td {
+  padding: 1rem;
+  border-bottom: 1px solid #333;
+  color: #fff;
+}
+
+.method-table tr:hover {
+  background: rgba(0, 102, 255, 0.1);
+}
+
+.method-table tr:last-child td {
+  border-bottom: none;
+}
+
+/* Enhanced FAQ Styles for Withdrawals Page */
+.faq-item {
+  background: #232323;
+  border: 2px solid #0066ff;
+  margin-bottom: 1rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  border-color: #ffd700;
+  transform: translateX(5px);
+}
+
+.faq-question {
+  padding: 1.5rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.faq-question::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: #0066ff;
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover .faq-question::before {
+  background: #ffd700;
+}
+
+.faq-question:hover {
+  background: rgba(0, 102, 255, 0.1);
+}
+
+.faq-question h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  flex: 1;
+  margin: 0;
+}
+
+.faq-question i {
+  transition: transform 0.3s ease;
+  color: #aabbcc;
+}
+
+.faq-answer {
+  padding: 0 1.5rem 1.5rem;
+  color: #aabbcc;
+  line-height: 1.6;
+  display: none;
+}
+
+/* Responsive Design for Withdrawals Page */
+@media (max-width: 768px) {
+  .withdrawal-article {
+    padding: 2rem;
+  }
+
+  .speed-stat-card {
+    padding: 1.5rem;
+  }
+
+  .speed-icon {
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+  }
+
+  .speed-time {
+    font-size: 1.25rem;
+  }
+
+  .method-table th,
+  .method-table td {
+    padding: 0.75rem;
+    font-size: 0.9rem;
+  }
+
+  .method-title {
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  .highlight-box {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .withdrawal-article {
+    padding: 1.5rem;
+  }
+
+  .method-table th,
+  .method-table td {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .method-table table {
+    font-size: 0.8rem;
+  }
+
+  .faq-question {
+    padding: 1rem;
+  }
+
+  .faq-answer {
+    padding: 0 1rem 1rem;
+  }
+}

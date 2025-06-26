@@ -1,0 +1,293 @@
+/* Additional styles for about page */
+
+/* About Sections */
+.about-section {
+  margin-bottom: 3rem;
+}
+
+.about-card {
+  background: #232323;
+  border: 2px solid #0066ff;
+  padding: 3rem;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  border-color: #ffd700;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.2);
+}
+
+.about-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #0066ff, #ffd700, #0066ff);
+  animation: borderFlow 3s ease-in-out infinite;
+}
+
+@keyframes borderFlow {
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.about-subtitle {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: #ffd700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.about-content {
+  color: #fff;
+  line-height: 1.7;
+}
+
+/* Company Details */
+.company-details {
+  background: #1e1e1e;
+  border: 2px solid #0066ff;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.address-block {
+  background: #232323;
+  border-left: 4px solid #ffd700;
+  padding: 1.5rem;
+  margin-top: 1rem;
+}
+
+.address-block p {
+  margin-bottom: 0.5rem;
+  color: #aabbcc;
+}
+
+/* License Details */
+.license-details {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.license-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #1e1e1e;
+  border: 1px solid #0066ff;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.license-item:hover {
+  border-color: #ffd700;
+  background: rgba(0, 102, 255, 0.1);
+}
+
+.license-label {
+  font-weight: bold;
+  color: #aabbcc;
+}
+
+.license-value {
+  color: #ffd700;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* Commitment Grid */
+.commitment-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.commitment-item {
+  background: #1e1e1e;
+  border: 2px solid #0066ff;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.commitment-item:hover {
+  border-color: #ffd700;
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(255, 215, 0, 0.2);
+}
+
+.commitment-item i {
+  font-size: 2rem;
+  display: block;
+}
+
+.commitment-item h3 {
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+/* Compliance List */
+.compliance-list {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.compliance-item {
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  border: 1px solid #0066ff;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
+.compliance-item:hover {
+  border-color: #ffd700;
+  background: rgba(0, 102, 255, 0.1);
+  transform: translateX(5px);
+}
+
+.compliance-item span {
+  color: #aabbcc;
+  font-weight: 500;
+}
+
+/* Contact Grid */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  border: 2px solid #0066ff;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  border-color: #ffd700;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+}
+
+.contact-item i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+}
+
+.contact-item div {
+  flex: 1;
+}
+
+.contact-item .font-bold {
+  color: #fff;
+  margin-bottom: 0.25rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-card {
+    padding: 2rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.25rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .about-subtitle i {
+    margin-right: 0;
+  }
+
+  .company-details,
+  .address-block {
+    padding: 1.5rem;
+  }
+
+  .license-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .license-value {
+    text-align: left;
+  }
+
+  .commitment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .commitment-item {
+    padding: 1.5rem;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-item {
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .about-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .company-details,
+  .address-block {
+    padding: 1rem;
+  }
+
+  .commitment-item,
+  .contact-item {
+    padding: 1rem;
+  }
+
+  .commitment-item i {
+    font-size: 1.5rem;
+  }
+}
+
+/* Animation Performance */
+@media (prefers-reduced-motion: reduce) {
+  .about-card,
+  .commitment-item,
+  .contact-item,
+  .compliance-item,
+  .license-item {
+    transition: none;
+  }
+
+  .about-card::before {
+    animation: none;
+  }
+}

@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SpeedySpins Casino & Sportsbook - 200% Bonus up to €7,500</title>
+    <meta name="description" content="Join SpeedySpins Casino for the ultimate gaming experience. Get 200% bonus up to €7,500 plus 10% weekly cashback. Play premium slots, live dealer games, and win big with instant payouts.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="SpeedySpins Casino - 200% Bonus up to €7,500">
+    <meta property="og:description" content="Premium online casino with instant payouts, crypto payments, and exclusive bonuses. Join now and claim your welcome package.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://speedyspins.org">
+    <meta property="og:image" content="https://speedyspins.org/images/hero.png">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'casino-bg': '#1e1e1e',
+                        'casino-panel': '#232323',
+                        'casino-cta': '#AABBCC',
+                        'casino-blue': '#0066ff',
+                        'casino-gold': '#ffd700'
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-casino-bg text-white overflow-x-hidden">
+    <!-- Floating Money Elements -->
+    <div class="floating-money">
+        <div class="money-symbol">€</div>
+        <div class="money-symbol">€</div>
+        <div class="money-symbol">€</div>
+        <div class="money-symbol">€</div>
+        <div class="money-symbol">€</div>
+    </div>
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 right-0 z-50 bg-casino-panel/90 backdrop-blur-sm border-4 border-b-4 border-casino-blue floating-header">
+        <div class="container mx-auto px-4">
+            <nav class="flex items-center justify-between py-4">
+                
+                <a href="/">
+                    <img src="images/logo.png" class="h-16" alt="Speedyspins logo" />
+                    </a>
+                <ul class="hidden md:flex space-x-8">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="#games" class="nav-link">Games</a></li>
+                    <li><a href="#bonuses" class="nav-link">Bonuses</a></li>
+                    <li><a href="/about" class="nav-link">About</a></li>
+                    <li><a href="#support" class="nav-link">Support</a></li>
+                </ul>
+                <button onclick="redirectToRegister()" class="cta-button">
+                    <i class="fas fa-user-plus mr-2"></i>Join Now
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="mt-8 relative min-h-screen flex items-center pt-20 parallax-bg">
+        <div class="container mx-auto px-4 grid lg:grid-cols-2 gap-12 items-center">
+            <div class="space-y-8">
+                <!-- Hero Title -->
+                <h1 class="hero-title">
+                    SpeedySpins Casino<br>
+                    <span class="text-casino-blue">Lightning Fast Wins</span><br>
+                    <span class="text-casino-gold">Instant Payouts</span>
+                </h1>
+
+                <!-- Bonus Display Box -->
+                <div class="bonus-box">
+                    <div class="text-casino-gold text-sm font-bold mb-2">WELCOME BONUS</div>
+                    <div class="text-4xl font-bold mb-2">200% UP TO €7,500</div>
+                    <div class="text-casino-cta">+ 10% Weekly Cashback</div>
+                </div>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <button onclick="redirectToRegister()" class="cta-button-large pulse-animation">
+                        <i class="fas fa-rocket mr-2"></i>Claim Bonus Now
+                    </button>
+                    <button onclick="redirectToRegister()" class="cta-button-secondary">
+                        <i class="fas fa-gamepad mr-2"></i>Play Demo
+                    </button>
+                </div>
+            </div>
+
+            <!-- Hero Image -->
+            <div class="relative">
+                <div class="hero-image-container">
+                    <img src="images/hero.png" alt="SpeedySpins Casino Games" class="w-full h-auto">
+                    <div class="floating-chips">
+                        <div class="chip chip-1"></div>
+                        <div class="chip chip-2"></div>
+                        <div class="chip chip-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Animated Lights -->
+        <div class="spotlight spotlight-1"></div>
+        <div class="spotlight spotlight-2"></div>
+        <div class="spotlight spotlight-3"></div>
+    </section>
+
+    <!-- How to Claim Bonus -->
+    <section class="py-20 bg-casino-panel/50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">How to Claim Your Bonus</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">1. Register</h3>
+                    <p>Create your SpeedySpins account in under 60 seconds</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">2. Deposit</h3>
+                    <p>Make your first deposit of €20 or more</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-gift"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">3. Claim</h3>
+                    <p>Your bonus is automatically credited to your account</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-icon">
+                        <i class="fas fa-play"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">4. Play</h3>
+                    <p>Start spinning and winning with your bonus funds</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gringo's Picks -->
+    <section id="games" class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Gringo's Picks</h2>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="images/7-sizzling-hot.jpg" />
+                    </div>
+                    <div class="game-overlay flex flex-col">
+                        <button onclick="redirectToRegister()" class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="game-placeholder">7 Sizzling Hot Deluxe</div>
+                    </div>
+                
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="images/chaos-crew.jpg" />
+                    
+                    </div>
+                    <div class="game-overlay flex flex-col">
+                        <button onclick="redirectToRegister()" class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="game-placeholder">Chaos Crew</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="images/book-of-ra" />
+                    </div>
+                    <div class="game-overlay flex flex-col">
+                        <button onclick="redirectToRegister()" class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="game-placeholder">Book of Ra</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="images/le-pharaon.jpg" />
+                    </div>
+                    <div class="game-overlay flex flex-col">
+                        <button onclick="redirectToRegister()" class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="game-placeholder">Le Pharaon</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="images/gold-chain.jpg" />
+                    </div>
+                    <div class="game-overlay flex flex-col">
+                        <button onclick="redirectToRegister()" class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="game-placeholder">Gold Chain</div>
+                    </div>
+                </div>
+                <div class="game-card">
+                    <div class="game-image">
+                        <img src="images/gates-of-olympus" />
+                    </div>
+                    <div class="game-overlay flex flex-col">
+                        <button onclick="redirectToRegister()" class="play-btn">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <div class="game-placeholder">Gates Of Olympus</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Portfolio -->
+    <section class="py-20 bg-casino-panel/50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Game Portfolio</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6">
+                <div class="stat-card">
+                    <div class="stat-number">247</div>
+                    <div class="stat-label">Megaways</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">156</div>
+                    <div class="stat-label">Cluster Pays</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">89</div>
+                    <div class="stat-label">Table Games</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">134</div>
+                    <div class="stat-label">Crash Games</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">298</div>
+                    <div class="stat-label">Live Dealer</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">167</div>
+                    <div class="stat-label">Jackpots</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-number">203</div>
+                    <div class="stat-label">Exclusive</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="section-title text-center mb-16">About SpeedySpins Casino</h2>
+                <div class="prose prose-invert max-w-none">
+                    <p class="text-lg mb-6">SpeedySpins Casino stands as a premier destination for discerning players seeking exceptional gaming experiences with lightning-fast payouts. Established with a commitment to excellence, the platform delivers an extensive portfolio of premium games from industry-leading providers, ensuring every spin brings excitement and potential rewards.</p>
+                    
+                    <p class="text-lg mb-6">The casino's innovative approach combines cutting-edge technology with player-focused features, creating an environment where entertainment meets opportunity. Players enjoy access to thousands of carefully curated games, from classic slots to immersive live dealer experiences, all powered by state-of-the-art software that guarantees fair play and seamless performance across all devices.</p>
+                    
+                    <p class="text-lg mb-6">SpeedySpins Casino's reputation for reliability stems from its unwavering commitment to security, transparency, and responsible gaming practices. The platform employs advanced encryption protocols to protect player data and transactions, while maintaining strict compliance with international gaming regulations. Licensed by Anjouan Gaming, the casino operates under rigorous oversight, ensuring players can focus on what matters most - enjoying their favorite games with complete peace of mind.</p>
+                    
+                    <p class="text-lg mb-6">What sets SpeedySpins apart is its dedication to speed and efficiency. True to its name, the casino processes withdrawals with remarkable speed, often completing transactions within hours rather than days. This commitment to quick payouts, combined with a comprehensive VIP program and generous bonus structure, creates an unparalleled gaming environment that rewards loyalty and enhances the overall player experience.</p>
+                    
+                    <p class="text-lg">The platform's multilingual support team operates around the clock, providing assistance in multiple languages to ensure every player receives the help they need, when they need it. Whether you're a seasoned high roller or a newcomer to online gaming, SpeedySpins Casino offers the perfect blend of excitement, security, and service that defines premium online entertainment.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Game Providers -->
+    <section class="py-20 bg-casino-panel/50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Game Providers</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
+                <div class="provider-card">NetEnt</div>
+                <div class="provider-card">Microgaming</div>
+                <div class="provider-card">Play'n GO</div>
+                <div class="provider-card">Pragmatic Play</div>
+                <div class="provider-card">Evolution Gaming</div>
+                <div class="provider-card">Yggdrasil</div>
+                <div class="provider-card">Red Tiger</div>
+                <div class="provider-card">Big Time Gaming</div>
+                <div class="provider-card">Quickspin</div>
+                <div class="provider-card">Thunderkick</div>
+                <div class="provider-card">Nolimit City</div>
+                <div class="provider-card">Push Gaming</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Methods -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Payment Methods</h2>
+            <div class="max-w-6xl mx-auto">
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Deposit Methods</h3>
+                        <div class="payment-table">
+                            <table class="w-full">
+                                <thead>
+                                    <tr>
+                                        <th>Method</th>
+                                        <th>Min/Max</th>
+                                        <th>Processing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fab fa-cc-visa mr-2"></i>Visa</td>
+                                        <td>€20 / €5,000</td>
+                                        <td>Instant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-cc-mastercard mr-2"></i>Mastercard</td>
+                                        <td>€20 / €5,000</td>
+                                        <td>Instant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-paypal mr-2"></i>PayPal</td>
+                                        <td>€10 / €10,000</td>
+                                        <td>Instant</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-university mr-2"></i>Bank Transfer</td>
+                                        <td>€50 / €50,000</td>
+                                        <td>1-3 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-bitcoin mr-2"></i>Bitcoin</td>
+                                        <td>€25 / €25,000</td>
+                                        <td>15 mins</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-ethereum mr-2"></i>Ethereum</td>
+                                        <td>€25 / €25,000</td>
+                                        <td>15 mins</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Withdrawal Methods</h3>
+                        <div class="payment-table">
+                            <table class="w-full">
+                                <thead>
+                                    <tr>
+                                        <th>Method</th>
+                                        <th>Min/Max</th>
+                                        <th>Processing</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><i class="fab fa-cc-visa mr-2"></i>Visa</td>
+                                        <td>€20 / €2,500</td>
+                                        <td>1-3 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-paypal mr-2"></i>PayPal</td>
+                                        <td>€10 / €5,000</td>
+                                        <td>24 hours</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-university mr-2"></i>Bank Transfer</td>
+                                        <td>€50 / €25,000</td>
+                                        <td>3-5 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-bitcoin mr-2"></i>Bitcoin</td>
+                                        <td>€25 / €15,000</td>
+                                        <td>1 hour</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fab fa-ethereum mr-2"></i>Ethereum</td>
+                                        <td>€25 / €15,000</td>
+                                        <td>1 hour</td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fas fa-coins mr-2"></i>Litecoin</td>
+                                        <td>€25 / €15,000</td>
+                                        <td>30 mins</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <p class="text-lg leading-relaxed">SpeedySpins Casino offers a comprehensive range of payment solutions designed to accommodate players from around the globe. The platform supports traditional banking methods alongside modern cryptocurrency options, ensuring every player can find a suitable payment method that meets their preferences and requirements. All transactions are protected by advanced SSL encryption technology, guaranteeing the security of financial information and funds. The casino's partnership with leading payment processors ensures reliable, fast, and secure transactions across all supported methods. Cryptocurrency payments offer additional benefits including enhanced privacy, reduced fees, and faster processing times, making them an increasingly popular choice among tech-savvy players. The platform's commitment to financial transparency means all fees, limits, and processing times are clearly displayed, allowing players to make informed decisions about their banking preferences. Customer support is available to assist with any payment-related queries, ensuring a smooth and hassle-free banking experience for all players.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Security & VIP Program -->
+    <section class="py-20 bg-casino-panel/50">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">Security & VIP Program</h2>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">VIP Levels</h3>
+                        <div class="space-y-4">
+                            <div class="vip-level">
+                                <div class="vip-badge bronze">Bronze</div>
+                                <div class="vip-details">
+                                    <div>5% Weekly Cashback</div>
+                                    <div>Standard Support</div>
+                                </div>
+                            </div>
+                            <div class="vip-level">
+                                <div class="vip-badge silver">Silver</div>
+                                <div class="vip-details">
+                                    <div>7% Weekly Cashback</div>
+                                    <div>Priority Support</div>
+                                </div>
+                            </div>
+                            <div class="vip-level">
+                                <div class="vip-badge gold">Gold</div>
+                                <div class="vip-details">
+                                    <div>10% Weekly Cashback</div>
+                                    <div>Personal Account Manager</div>
+                                </div>
+                            </div>
+                            <div class="vip-level">
+                                <div class="vip-badge platinum">Platinum</div>
+                                <div class="vip-details">
+                                    <div>12% Weekly Cashback</div>
+                                    <div>Exclusive Bonuses</div>
+                                </div>
+                            </div>
+                            <div class="vip-level">
+                                <div class="vip-badge diamond">Diamond</div>
+                                <div class="vip-details">
+                                    <div>15% Weekly Cashback</div>
+                                    <div>VIP Events & Gifts</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-6">Security Features</h3>
+                        <div class="space-y-4">
+                            <div class="security-feature">
+                                <i class="fas fa-shield-alt text-casino-gold mr-3"></i>
+                                <span>256-bit SSL Encryption</span>
+                            </div>
+                            <div class="security-feature">
+                                <i class="fas fa-lock text-casino-gold mr-3"></i>
+                                <span>Two-Factor Authentication</span>
+                            </div>
+                            <div class="security-feature">
+                                <i class="fas fa-user-shield text-casino-gold mr-3"></i>
+                                <span>KYC Verification</span>
+                            </div>
+                            <div class="security-feature">
+                                <i class="fas fa-eye text-casino-gold mr-3"></i>
+                                <span>24/7 Fraud Monitoring</span>
+                            </div>
+                            <div class="security-feature">
+                                <i class="fas fa-server text-casino-gold mr-3"></i>
+                                <span>Secure Data Centers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-12">
+                    <p class="text-lg leading-relaxed">SpeedySpins Casino's VIP program represents the pinnacle of online gaming luxury, offering exclusive benefits and personalized service to valued players. The tiered system rewards loyalty with increasingly generous cashback rates, priority customer support, and access to exclusive promotions and events. VIP members enjoy faster withdrawal processing, higher betting limits, and personalized bonus offers tailored to their gaming preferences. The program's structure encourages continued play while providing tangible benefits that enhance the overall gaming experience. Security remains paramount at SpeedySpins, with multiple layers of protection safeguarding player accounts and transactions. The platform employs industry-standard encryption protocols, regular security audits, and sophisticated fraud detection systems to maintain the highest levels of security. Players can game with confidence knowing their personal and financial information is protected by the same security measures used by leading financial institutions. The combination of exceptional VIP benefits and robust security measures creates an environment where players can focus on enjoying their favorite games while receiving the recognition and protection they deserve.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Review -->
+    <section id="bonuses" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="max-w-6xl mx-auto">
+                <h2 class="section-title text-center mb-16">Bonuses & Promotions</h2>
+                <div class="space-y-8">
+                    <div class="bonus-review-card">
+                        <h3 class="text-2xl font-bold mb-4">Welcome Bonus Package</h3>
+                        <p class="text-lg mb-6">SpeedySpins Casino's welcome bonus stands among the most generous in the industry, offering new players an exceptional 200% match bonus up to €7,500 on their first deposit. This substantial bonus provides players with significantly more funds to explore the extensive game library and discover their favorite titles. The bonus is complemented by a 10% weekly cashback program that continues long after the welcome offer, ensuring ongoing value for regular players.</p>
+                        
+                        <h4 class="text-xl font-bold mb-3">Bonus Features:</h4>
+                        <ul class="list-disc list-inside space-y-2 mb-6">
+                            <li>200% match bonus up to €7,500 on first deposit</li>
+                            <li>10% weekly cashback on net losses</li>
+                            <li>Automatic bonus crediting within minutes</li>
+                            <li>Flexible wagering requirements across multiple game types</li>
+                            <li>No maximum win limits on bonus funds</li>
+                            <li>Extended 30-day validity period for bonus completion</li>
+                        </ul>
+
+                        <div class="bonus-table">
+                            <table class="w-full">
+                                <thead>
+                                    <tr>
+                                        <th>Bonus Type</th>
+                                        <th>Amount</th>
+                                        <th>Wagering</th>
+                                        <th>Validity</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Welcome Bonus</td>
+                                        <td>200% up to €7,500</td>
+                                        <td>35x bonus</td>
+                                        <td>30 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Weekly Cashback</td>
+                                        <td>10% of net losses</td>
+                                        <td>No wagering</td>
+                                        <td>Weekly</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Reload Bonus</td>
+                                        <td>50% up to €1,000</td>
+                                        <td>30x bonus</td>
+                                        <td>14 days</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Free Spins</td>
+                                        <td>100 spins weekly</td>
+                                        <td>25x winnings</td>
+                                        <td>7 days</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="bonus-review-card">
+                        <h3 class="text-2xl font-bold mb-4">Ongoing Promotions</h3>
+                        <p class="text-lg mb-6">Beyond the welcome package, SpeedySpins maintains an active promotional calendar featuring daily, weekly, and monthly offers designed to enhance the gaming experience. These promotions include free spin tournaments, cashback boosts, and exclusive game releases with special bonus features. The casino's promotional strategy focuses on providing consistent value while introducing players to new games and features.</p>
+                        
+                        <p class="text-lg">All bonuses at SpeedySpins come with transparent terms and conditions, clearly outlining wagering requirements, game contributions, and validity periods. The casino's commitment to fair bonus policies ensures players can enjoy promotional offers without hidden surprises or unrealistic completion requirements. Wagering requirements are competitive within the industry standard, and the casino offers multiple game types that contribute toward bonus completion, providing flexibility in how players choose to meet their wagering obligations.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Support -->
+    <section id="support" class="py-20 bg-casino-panel/50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Customer Support</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Live Chat</h3>
+                    <p>24/7 instant support via live chat. Average response time under 30 seconds.</p>
+                    <div class="mt-4">
+                        <span class="status-badge online">Online Now</span>
+                    </div>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Email Support</h3>
+                    <p>Detailed assistance via email. Response within 2 hours guaranteed.</p>
+                    <div class="mt-4">
+                        <a href="mailto:support@speedyspins.org" class="text-casino-cta hover:underline">support@speedyspins.com</a>
+                    </div>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Phone Support</h3>
+                    <p>Direct phone support for VIP members and urgent matters.</p>
+                    <div class="mt-4">
+                        <span class="text-casino-cta">+1-800-SPEEDY-1</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Promotions -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Other Promotions</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="promo-card">
+                    <div class="promo-header">
+                        <i class="fas fa-trophy text-casino-gold text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Tournament Tuesdays</h3>
+                    </div>
+                    <p class="mb-4">Compete in weekly slot tournaments with €10,000 prize pools. Entry fee just €5 with guaranteed prizes for top 100 players.</p>
+                    <button onclick="redirectToRegister()" class="cta-button w-full">Join Tournament</button>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-header">
+                        <i class="fas fa-calendar-alt text-casino-gold text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Weekend Reload</h3>
+                    </div>
+                    <p class="mb-4">Get 75% bonus up to €500 every weekend plus 50 free spins on featured slots. Available Friday to Sunday.</p>
+                    <button onclick="redirectToRegister()" class="cta-button w-full">Claim Bonus</button>
+                </div>
+                <div class="promo-card">
+                    <div class="promo-header">
+                        <i class="fas fa-star text-casino-gold text-3xl mb-4"></i>
+                        <h3 class="text-xl font-bold">Loyalty Rewards</h3>
+                    </div>
+                    <p class="mb-4">Earn comp points on every bet. Exchange points for cash, bonuses, or exclusive merchandise from our VIP store.</p>
+                    <button onclick="redirectToRegister()" class="cta-button w-full">Start Earning</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Features -->
+    <section class="py-20 bg-casino-panel/50">
+        <div class="container mx-auto px-4">
+            <!-- Instant Payouts -->
+            <div class="mb-20">
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-4xl font-bold mb-6">Lightning Fast Payouts</h2>
+                        <p class="text-lg mb-6">Experience the thrill of instant wins with SpeedySpins' revolutionary payout system. Most withdrawals are processed within 60 minutes, with cryptocurrency payouts often completed in under 15 minutes.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fas fa-bolt text-casino-gold mr-3"></i>
+                                <span>Average payout time: 45 minutes</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-clock text-casino-gold mr-3"></i>
+                                <span>24/7 automated processing</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-shield-alt text-casino-gold mr-3"></i>
+                                <span>Secure and verified transactions</span>
+                            </li>
+                        </ul>
+                        <button onclick="redirectToRegister()" class="cta-button-large">Experience Speed</button>
+                    </div>
+                    <div class="relative">
+                        <img src="images/instant-withdrawals.png" alt="Instant Payouts" class="w-full h-auto rounded-lg">
+                        <div class="absolute inset-0 bg-gradient-to-r from-casino-blue/20 to-transparent rounded-lg"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crypto Payments -->
+            <div>
+                <div class="grid lg:grid-cols-2 gap-12 items-center">
+                    <div class="lg:order-2">
+                        <h2 class="text-4xl font-bold mb-6">Crypto Accepted!</h2>
+                        <p class="text-lg mb-6">Embrace the future of online gaming with SpeedySpins' comprehensive cryptocurrency support. Enjoy enhanced privacy, reduced fees, and exclusive crypto bonuses.</p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center">
+                                <i class="fab fa-bitcoin text-casino-gold mr-3"></i>
+                                <span>50 free spins on crypto deposits</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-gift text-casino-gold mr-3"></i>
+                                <span>Exclusive crypto-only bonuses</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-percentage text-casino-gold mr-3"></i>
+                                <span>Boosted 15% cashback for crypto users</span>
+                            </li>
+                        </ul>
+                        <button onclick="redirectToRegister()" class="cta-button-large">Start Crypto Gaming</button>
+                    </div>
+                    <div class="relative lg:order-1">
+                        <img src="images/crypto.png" alt="Crypto Payments" class="w-full h-auto rounded-lg">
+                        <div class="absolute inset-0 bg-gradient-to-l from-casino-gold/20 to-transparent rounded-lg"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="py-20">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Licensed & Secure</h2>
+            <div class="flex flex-wrap justify-center items-center gap-8">
+                <div class="trust-badge">
+                    <i class="fas fa-certificate text-casino-gold text-3xl mb-2"></i>
+                    <div class="text-sm">Licensed by</div>
+                    <div class="font-bold">Anjouan Gaming</div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-shield-alt text-casino-gold text-3xl mb-2"></i>
+                    <div class="text-sm">SSL Secured</div>
+                    <div class="font-bold">256-bit Encryption</div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-random text-casino-gold text-3xl mb-2"></i>
+                    <div class="text-sm">Fair Gaming</div>
+                    <div class="font-bold">RNG Certified</div>
+                </div>
+                <div class="trust-badge">
+                    <i class="fas fa-user-shield text-casino-gold text-3xl mb-2"></i>
+                    <div class="text-sm">Responsible Gaming</div>
+                    <div class="font-bold">Player Protection</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-casino-panel/50">
+        <div class="container mx-auto px-4">
+            <h2 class="section-title text-center mb-16">Frequently Asked Questions</h2>
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How long does it take to receive my winnings?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>SpeedySpins processes most withdrawals within 60 minutes. Cryptocurrency withdrawals are typically completed in under 15 minutes, while traditional banking methods may take 1-3 business days depending on your bank.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What are the wagering requirements for the welcome bonus?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The welcome bonus has a 35x wagering requirement on the bonus amount. Slots contribute 100% toward wagering, table games contribute 10%, and live dealer games contribute 5%. You have 30 days to complete the wagering requirements.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is SpeedySpins Casino licensed and regulated?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, SpeedySpins Casino operates under a license from Anjouan Gaming, ensuring fair play, secure transactions, and responsible gaming practices. All games are regularly audited for fairness and randomness.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I play on mobile devices?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>SpeedySpins Casino is fully optimized for mobile play. You can access all games, bonuses, and account features directly through your mobile browser without downloading any apps.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-casino-panel border-t border-casino-blue/30 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <a href="/">
+                    <img src="images/logo.png" class="h-16" alt="Speedyspins logo" />
+                    </a>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="/withdrawals" class="hover:text-casino-cta">Withdrawals</a></li>
+                        <li><a href="#bonuses" class="hover:text-casino-cta">Bonuses</a></li>
+                        <li><a href="#about" class="hover:text-casino-cta">About</a></li>
+                        <li><a href="#support" class="hover:text-casino-cta">Support</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">How to Login</h4>
+                    <p class="text-sm text-gray-400 mb-2">Visit speedyspins.org and click "Login" in the top right corner. Enter your username and password to access your account.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Responsible Gaming</h4>
+                    <div class="space-y-2 text-sm">
+                        <div class="flex items-center">
+                            <i class="fas fa-exclamation-triangle text-casino-gold mr-2"></i>
+                            <span>18+ Only</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-phone text-casino-gold mr-2"></i>
+                            <span>Problem Gambling: 1-800-522-4700</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-casino-blue/30 pt-8 text-center text-sm text-gray-400">
+                <p class="mb-2">Gambling can be addictive. Play responsibly. Consult if gambling is legal in your region. 21+</p>
+                <p>&copy; 2024 SpeedySpins Casino. All rights reserved. Licensed by Anjouan Gaming.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
